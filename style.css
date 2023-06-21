@@ -1,0 +1,131 @@
+*{
+    background: #E5E5E5;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /*sumando codigo*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 100px;
+   
+}
+header{
+    margin: 0 auto;
+    max-width: 1200px;
+    /*Esta medida indica que el elmento va a medir de ancho el mismo tamaño que la pantalla*/
+    width: 100vw;
+}
+main{
+    display: flex;
+    /*margin-bottom: 60px;
+    margin-left: 80px;*/
+    /*sumando codigo*/
+    min-height: 92vh;
+    /*Cambió el ancho a 100% para que el main ocupe el mismo tamaño del contenedor padre, que en este caso es el body
+    ya que los 2 contenedores con los campos de texto están dentro del main*/
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-content: center ;
+}
+.text-area{
+    border: none;
+    color: #0A3871;
+    /*transformar el texto a minuscula*/
+    text-transform: lowercase;
+}
+::placeholder{
+    color: #0A3871;
+}
+.text-area:focus {outline: none;}
+
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+.btn-Encriptar{
+    
+    background: #0A3871;
+    border-radius: 24px;
+    color: #D8DFE8;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 320px;
+
+}
+
+.btn-Desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 320px;
+}
+
+.informacion{
+    font-size: 18px;
+    color: #495057;
+}
+.mensajeDeFoults {
+    display: flexbox ;
+    bottom: 150px;
+    color: #0a3871;
+}
+.mensaje
+{
+    background: white;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    /*Con la propiedad 'background-size' puedes cambiar el tamaño de la imagen de fondo. La opción 'contain' sirve para que ocupe el 100% del elemento*/
+    background-size: contain;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.mensaje:focus {
+    outline: none;
+}
+.mensaje::placeholder 
+{
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+/*.mensajeDeFoult1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensajeDeFoult2 {
+    font-size: 14px;
+    text-align: center;
+}*/
+.btn-copiar
+{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    /*margin-top: 402px;*/
+    position: absolute;
+    width: 336px;
+}
+    
